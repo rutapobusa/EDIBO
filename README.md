@@ -25,12 +25,12 @@ exit - komanda, kas aizved uz sākumu
 "~" - relatīvās adreses apzīmējums  
 
 
-[Links](https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/)  
-[Links](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)  
-[Links](https://www.tecmint.com/linux-commands-cheat-sheet/)  
-[Links](http://linuxcommand.org/lc3_lts0010.php)  
-[Links](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/)  
-[Links](https://www.thegeekdiary.com/unix-linux-what-is-a-shell-what-are-different-shells/)  
+[https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/](https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/)  
+[https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)  
+[https://www.tecmint.com/linux-commands-cheat-sheet/](https://www.tecmint.com/linux-commands-cheat-sheet/)  
+[http://linuxcommand.org/lc3_lts0010.php](http://linuxcommand.org/lc3_lts0010.php)  
+[https://www.geeksforgeeks.org/basic-shell-commands-in-linux/](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/)  
+[https://www.thegeekdiary.com/unix-linux-what-is-a-shell-what-are-different-shells/](https://www.thegeekdiary.com/unix-linux-what-is-a-shell-what-are-different-shells/)  
 
 Absolūtā adrese sākas ar "/" (Root)  
 
