@@ -35,3 +35,4 @@ exit - komanda, kas aizved uz sākumu
 
 Absolūtā adrese sākas ar "/" (Root)  
 
+[Ascii table](http://ecowin.org/ascii.htm)
