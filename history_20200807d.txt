@@ -1,0 +1,5 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  pwd
+    4  history
+    5  history > history_20200807d.txt

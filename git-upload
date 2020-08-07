@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git config --global user.email rutapobusa@gmail.com
+git add .
+git commit -m "20200807_16_32"
+git push origin master
