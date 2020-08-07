@@ -1,0 +1,25 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  ls -l
+    4  git clone https://github.com/rutapobusa/EDIBO
+    5  ls -lt
+    6  cd EDIBO
+    7  ls
+    8  ls -lt
+    9  ls -l
+   10  ls -lt
+   11  cat README.md
+   12  hexdump -C README.md
+   13  nano README.md
+   14  ls -lt
+   15  ls -lta
+   16  history
+   17  history > history_20200807a.txt
+   18  ls -lt
+   19  pwd
+   20  git config --global user.email rutapobusa@gmail.com
+   21  git add.
+   22  git add .
+   23  git commit -m "20200807_13_30_pirmais_upload_no_cli"
+   24  git push origin master
+   25  history > history_20200807b.txt
