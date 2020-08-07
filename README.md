@@ -24,7 +24,7 @@ echo $0 - noskaidro, kurā Shell strādā
 exit - komanda, kas aizved uz sākumu  
 "~" - relatīvās adreses apzīmējums  
 
-##### Adreses, kur meklēt papildus informāciju:  
+###### Adreses, kur meklēt papildus informāciju:  
 [https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/](https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/)  
 [https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)  
 [https://www.tecmint.com/linux-commands-cheat-sheet/](https://www.tecmint.com/linux-commands-cheat-sheet/)  
