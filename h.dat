@@ -1,0 +1,192 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  PS1=":P"
+    4  cal
+    5  cal 2020
+    6  cal 0
+    7  cal 1
+    8  cal 0
+    9  date
+   10  man date
+   11  man cal
+   12  man time
+   13  delay 1
+   14  w
+   15  ps
+   16  man ps a
+   17  man ps
+   18  ps a
+   19  kill 988
+   20  ps a
+   21  kill 3889
+   22  ps a
+   23  ps
+   24  ps a
+   25  kill 3919
+   26  ps a
+   27  man date
+   28  ps a
+   29  ps axu
+   30  ps x
+   31  ps u
+   32  echo $HOME
+   33  echo pwd
+   34  echo 'pwd'
+   35  echo `pwd`
+   36  echo $(pwd)
+   37  printenv
+   38  printenv |less
+   39  cd echo $HOME
+   40  cd echo $(HOME)
+   41  cd  echo $HOME
+   42  cd `echo $HOME`
+   43  pwd
+   44  cd -
+   45  cd $(echo HOME)
+   46  cd $(echo $HOME)
+   47  pwd
+   48  cd `echo` $HOME
+   49  pwd
+   50  printenv |less
+   51  for i in a b c; do echo $i;done
+   52  for i in a b c; do echo i:$i;done
+   53  for i in aBb c; do echo $i;done
+   54  for i in a B c; do echo $i;done
+   55  for i in a b c; do echo i: $i;done
+   56* for k in a b c z; do echo i: $i;done
+   57  for 3 in a B c; do echo $i;done
+   58  for aa in a B c; do echo $i;done
+   59  for aa in a B c; do echo $aa;done
+   60  seq 1 10
+   61  N="11 22 33 44"
+   62  for i in N; do echo $i;done
+   63  for i in $N; do echo $i;done
+   64  for i in $N; do echo $i*5;done
+   65  for i in $N; do echo $((i*5));done
+   66  seq 1 10
+   67  for i in seq 1 5; do echo $i;done
+   68  for i in `seq 1 5`; do echo $i;done
+   69  for i in $(seq 1 5); do echo $i;done
+   70  for i in $(seq 1 5); do echo $(i*2);done
+   71  for i in $(seq 1 5); do echo $((i*2));done
+   72  for i in $(seq 1 5); do echo $i;done
+   73  for i in $(seq 1 5); do echo $((i*2));done
+   74  for i in $(seq 1 10); do echo $((i*2));done
+   75  for i in $(seq 1 5); do echo $i;done
+   76  for i in $(seq 1 10); do echo $((i*2));done
+   77  for i in $(seq 1 10); do echo $((i*3));done
+   78  for i in $(seq 1 10); do $((i*2));done
+   79  for i in $(seq 1 10); do echo $((i*3));done
+   80  for i in $(seq 1 10); do echo $((i*2));done
+   81  for i in $(seq 1 5); do echo $i; for i in $(sec 6 10); do echo $((i*2));done; for i in $(seq 1 10); do echo $((i*2));done; pwd; cd HOME; for i in $(seq 1 5); do echo $i; done;  exit;  for i in $(seq 1 5); do echo $i; for i in $(sec 6 10); do echo $((i*2));done; for i in $(seq 1 5); do echo $i; for i in $(sec 6 10); do echo $((i*2));done; for i in $(seq 1 10); do echo $((i*2));
+   82  for i in $(seq 1 10); do echo $((i*2));done
+   83  for i in $(seq 1 10); do echo $i=((i*2));done
+   84  for i in $(seq 1 10); do echo $i=((i*i));done
+   85  for i in $(seq 1 10); do echo $((i*i));done
+   86  for i in $(seq 1 10); do echo  $i  $((i*i));done
+   87  for i in $(seq 1 10); do echo   $i   $((i*i));done
+   88  for i in $(seq 1 10); do echo    $i    $((i*i));done
+   89  for i in $(seq 1 5); do echo  $i  $((i*i));done
+   90  for i in $(seq 1 5); do echo " $i"  $((i*i));done
+   91  for i in $(seq 1 5); do echo  $i " $((i*i))";done
+   92  for i in $(seq 1 5); do echo  $i "$((i*i))";done
+   93  for i in $(seq 1 5); do echo  $i " $((i*i))";done
+   94  for i in $(seq 1 5); do echo  $i "  $((i*i))";done
+   95  for i in $(seq 1 5); do echo  $i $i "  $((i*i))";done
+   96  for i in $(seq 1 5); do echo  $i  $i "  $((i*i))";done
+   97  for i in $(seq 1 5); do echo  $i "$i" "  $((i*i))";done
+   98  for i in $(seq 1 5); do echo  $i "  $((i*i))";done
+   99  for i in $(seq 1 5); do echo  $i " $((i*i))";done
+  100  for i in $(seq 1 5); do echo  $i "$((i*i))";done
+  101  for i in $(seq 1 10); do echo  $i "$((i*i))";done
+  102  for i in $(seq 1 10); do echo "$i $((i*i))";done
+  103  echo "a \t b"
+  104  echo -e "a \t b"
+  105  for i in $(seq 1 10); do echo  $i "$((i*i))";done
+  106  for i in $(seq 1 10); do echo -e  $i "$((i*i))";done
+  107  for i in $(seq 1 10); do echo  $i-e  "$((i*i))";done
+  108  for i in $(seq 1 10); do echo  $i "$((i*i))";done
+  109  for i in $(seq 1 10); do echo  $i "-e $((i*i))";done
+  110  for i in $(seq 1 10); do echo  $i "$((i*i))";done
+  111  for i in $(seq 1 10); do echo -e  $i "$((i*i))";done
+  112  for i in $(seq 1 10); do echo -e  $i\ "$((i*i))";done
+  113  for i in $(seq 1 10); do echo -e " $i "$((i*i))"";done
+  114  for i in $(seq 1 10); do echo -e " $i \ "$((i*i))"";done
+  115  for i in $(seq 1 10); do echo -e " $i\"$((i*i))"";done
+  116  for i in $(seq 1 10); do echo -e " $i \t$((i*i))";done
+  117  for i in $(seq 1 10); do echo -e " $i \t$((i*i)) $i";done
+  118  for i in $(seq 1 10); do echo -e " $i \t$((i*i)) \t$i";done
+  119  for i in $(seq 1 10); do echo -e " $i \t$((i*i)) \t$((i*2))";done
+  120  for i in $(seq 1 10); do echo -e " $i \t$((i*i)) \t$((i*2))";done > a.dat
+  121  cat
+  122  cat a.dat
+  123  for i in $(seq 1 100); do echo -e " $i \t$((i*i)) \t$((i*2))";done > a.dat
+  124  cat a.dat
+  125  for i in $(seq 1 100); do echo -e " $i \t$((i*i)) \t$((i*2))";done > a.dat;cat a.dat
+  126  for i in $(seq 1 100); do echo -e " $i \t$((i*i)) \t$((i*2))";done > a.dat;tail a.dat
+  127  for i in $(seq 1 1000); do echo -e " $i \t$((i*i)) \t$((i*2))";done > a.dat;tail a.dat
+  128  for i in $(seq 1 1000); do echo -e " $i \t$((i*i)) \t\t$((i*2))";done > a.dat;tail a.dat
+  129  for i in $(seq 1 1000); do echo -e " $i \t$((i*i)) \t $((i*2))";done > a.dat;tail a.dat
+  130  for i in $(seq 1 1001); do echo -e " $i \t$((i*i)) \t $((i*2))";done > a.dat;tail a.dat
+  131  for i in $(seq 1 1001); do echo -e " $i \t$((i*i))";done > a.dat;tail a.dat
+  132  time for i in $(seq 1 1001); do echo -e " $i \t$((i*i)) \t $((i*2))";done > a.dat;tail a.dat
+  133  time for i in $(seq 1 1001); do echo -e " $i \t$((i*i))";done > a.dat;tail a.dat
+  134  ls
+  135  ls -lt
+  136  ls -l| grep a.dat
+  137  chmod 000 a.dat
+  138  head -2 a.dat
+  139  chmod 666 a.dat
+  140  ls 
+  141  ls -l
+  142  head -2 a.dat
+  143  head -n 2 a.dat
+  144  tail -n 2 a.dat
+  145  ls
+  146  for i in $( ls ) do echo $i; done
+  147  for i in $( ls ;) do echo $i; done 
+  148  for i in $( ls ); do echo $i; done 
+  149  for i in $( ls ); do echo $i; done > b.dat 
+  150  cat b.dat
+  151  ls -l
+  152  ls -l| grep *.dat
+  153  ls -l| grep .dat
+  154  man egrep
+  155  ls -l| grep 111
+  156  ls -l|egrep 111
+  157  ls -l | egrep 111
+  158  ls -l| grep *.dat
+  159  head -3 a.dat
+  160  head -3 a.dat > c.dat
+  161  ls -l
+  162  l
+  163  ls -l c.dat
+  164  for i in $(seq 1 4); do echo " $i $((i*i))";done > d.dat 
+  165  ls -l d.dat
+  166  for i in $(seq 1 2); do echo " $i $((i*i))";done > d.dat 
+  167  ls -l d.dat
+  168  for i in $(seq 1 2); do echo "$i $((i*i))";done > d.dat 
+  169  ls -l d.dat
+  170  cat d.dat
+  171  for i in $(seq 1 4); do echo "$i $((i*i))";done > d.dat 
+  172  ls -l d.dat
+  173  for i in $(seq 1 2); do echo "$i $((i*i))";done > d.dat 
+  174  ls -l d.dat
+  175  cat d.dat
+  176  hxdump d.dat
+  177  hexdump d.dat
+  178  for i in 1; do echo "$i $((i*i))";done | hexdump
+  179  echo 1
+  180  echo 1 | hexdump
+  181  echo 2 | hexdump
+  182  echo 9 | hexdump
+  183  echo 10 | hexdump
+  184  echo a | hexdump
+  185  echo A | hexdump
+  186  echo 101 | hexdump
+  187  echo b | hexdump
+  188  echo Z | hexdump
+  189  echo z | hexdump
+  190  ASCII ---- UTF-8
+  191  history
+  192  history > h.dat
