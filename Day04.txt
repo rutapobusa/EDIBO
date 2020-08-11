@@ -1,0 +1,11 @@
+Programmēšanas "paņēmieni" vai svarīgākās konstrukcijas:
+1.a. Mainīgie - tiek lietoti identifikatori (a, b,ab, a_b drīkst), ("a b" - nedrīkst)
+1.b. Konstantes -"-
+2. operācijas: =; +; -; *; /; %; ...(parasti operācija notiek ar diviem operandiem)
+3.a. Nosacījuma operators - if (var būt ar else(pieder pie if), var būt elif, ...) koda izpildes sazarošanai
+3.b. Cikla operators - for, while, do ... while koda daļas atkārtošanai(ekvivalents - daudzas manuāli sarakstītas līdzīgas rindas)
+4. Funkcija - ar/bez  argumentiem, ar/bez atgriežamiem lielumiem
+
+Izmēģināsim dažus no šiem paņēmieniem SHELL'ā:
+izmantosim piemērus
+1. darbs ar mainīgajiem
