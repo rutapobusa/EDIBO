@@ -1,0 +1,69 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/rutapobusa/EDIBO
+    4  ls -lt
+    5  cd EDIBO
+    6  ls -lt
+    7  cd SHELL
+    8  ls -lt
+    9  mkdir SHELL
+   10  cd SHELL
+   11  ls -lt
+   12  nano dec_to_bin.sh
+   13  nano dec2bin.sh
+   14  mv test_variables_1.sh SHELL
+   15  ls -lt
+   16  nano dec2bin.sh
+   17  test dec2bin.sh
+   18  nano dec2bin.sh
+   19  test dec2bin.sh
+   20  nano dec2bin.sh
+   21  chmod 744 dec2bin.sh
+   22  ls -lt
+   23  nano dec2bin.sh
+   24  ./dec2bin.sh
+   25  nano dec2bin.sh
+   26  ./dec2bin.sh
+   27  ./dec2bin.sh 40 
+   28  nano dec2bin.sh
+   29  ./dec2bin.sh 40 
+   30  nano dec2bin.sh
+   31  ./dec2bin.sh 40 
+   32  nano dec2bin.sh
+   33  ./dec2bin.sh 40 
+   34  nano dec2bin.sh
+   35  ./dec2bin.sh 40 
+   36  nano dec2bin.sh
+   37  ./dec2bin.sh 40 
+   38  ./dec2bin.sh 
+   39  nano dec2bin.sh
+   40  ./dec2bin.sh 
+   41  ls -lt
+   42  nano dec2bin.sh
+   43  ./dec2bin.sh  100
+   44  nano dec2bin.sh
+   45  ./dec2bin.sh  10
+   46  nano dec2bin.sh
+   47  ./dec2bin.sh 
+   48  nano dec2bin.sh
+   49  ./dec2bin.sh 
+   50  nano dec2bin.sh
+   51  ./dec2bin.sh 
+   52  nano dec2bin.sh
+   53  ./dec2bin.sh 
+   54  nano dec2bin.sh
+   55  ./dec2bin.sh 
+   56  nano dec2bin.sh
+   57  ./dec2bin.sh 
+   58  nano dec2bin.sh
+   59  ./dec2bin.sh 
+   60  ./dec2bin.sh  5
+   61  nano dec2bin.sh
+   62  cd ..
+   63  ls -lt
+   64  mkdir Python
+   65  cd Python
+   66  nano README.md
+   67  cd ..
+   68  history
+   69  history > history_20200812a.txt
