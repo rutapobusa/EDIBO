@@ -32,6 +32,10 @@ exit - komanda, kas aizved uz sākumu
 [https://www.geeksforgeeks.org/basic-shell-commands-in-linux/](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/)  
 [https://www.thegeekdiary.com/unix-linux-what-is-a-shell-what-are-different-shells/](https://www.thegeekdiary.com/unix-linux-what-is-a-shell-what-are-different-shells/)  
 [https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)  
+[https://www.pythonforbeginners.com/files/reading-and-writing-files-in-python](https://www.pythonforbeginners.com/files/reading-and-writing-files-in-python)
+[https://www.py4e.com/html3/06-strings](https://www.py4e.com/html3/06-strings)
+[https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(array)](https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(array))
+
 
 Absolūtā adrese sākas ar "/" (Root)  
 
