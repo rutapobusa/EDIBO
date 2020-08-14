@@ -1,0 +1,25 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://gitgub.com/rutapobusa/EDIBO
+    4  idle
+    5  idle &
+    6  pwd
+    7  ls -lt
+    8  cd ..
+    9  history
+   10  nano git-upload
+   11  ./git-upload
+   12  pwd
+   13  ls -lt
+   14  mkdir HTML_CSS_JavaScript
+   15  ls -lt
+   16  cd HTML_CSS_JavaScript
+   17  nano index.html
+   18  pwd
+   19  code . 
+   20  ls -lt
+   21  nano index.html
+   22  nano git-upload
+   23  cd ..
+   24  ls -lt
+   25  history > history_20200814.txt
