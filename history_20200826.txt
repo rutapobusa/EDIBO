@@ -1,0 +1,100 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/rutapobusa/EDIBO
+    4  pwd
+    5  ls -lt
+    6  cd EDIBO
+    7  ls -lt
+    8  ip
+    9  ip a
+   10  ifconfig
+   11  curl https://jsonplaceholder.typicode.com/todos/1
+   12  curl https://jsonplaceholder.typicode.com/todos/4
+   13  curl https://fakeapi.com
+   14  curl https://fake-api.com
+   15  curl https://fake-api.com/api
+   16  curl https://fake-api.com/api/cars
+   17  curl https://fake-api.com/api/cars/
+   18  curl https://fake-api.com/api/cars/all cars
+   19* 
+   20  curl https://fake-api.com/api/cars/allcars/Jaguar
+   21  curl https://fake-api.com/api/cars/allcars/Jaguar | json_pp
+   22  curl https://fake-api.com/api/cars/allcars/Audi | json_pp
+   23  curl https://fake-api.com/api/cars/allcars/Volvo | json_pp
+   24  curl https://fake-api.com/api/cars/allcars/Audi | json_pp
+   25  curl https://fake-api.com/api/cars/allcars/Honda | json_pp
+   26  curl https://fake-api.com/api/cars/allcars/Honda | grep Dload
+   27  curl https://fake-api.com/api/cars/allcars/Volvo | grep Dload
+   28  curl https://fake-api.com/api/cars/allcars/Volkswagen | grep Dload
+   29  route
+   30  route -n
+   31  ping 10.152.16.1
+   32  ping google.com
+   33  ping githube.com
+   34  ping github.com
+   35  nslookup
+   36  ping 127.0.0.1
+   37  ls -lt
+   38  mkdir Web
+   39  ls -lt
+   40  cd Web
+   41  nano index.html
+   42  cat index.html
+   43  python3
+   44  python3 -m http.server
+   45  curl 127.0.0.1:8000
+   46  ls -lt
+   47  cat index.html
+   48  curl 127.0.0.1:8000
+   49  curl http://127.0.0.1:8000
+   50  nano index.html
+   51  ifconfig
+   52  ping 10.152.16.52 
+   53  curl 10.152.16.52:8000
+   54  nano index.html
+   55  curl 10.152.16.52:8000
+   56  cat index.html
+   57  curl 10.152.16.52:8000
+   58  curl http://10.152.16.52:8000
+   59  curl 10.152.16.52:8000
+   60  fg
+   61  curl 10.152.16.52:8000
+   62  ls
+   63  cat index.html 
+   64  python3 -m http.server
+   65  lsof -i :8080
+   66  lsof -i :8000
+   67  kill -9 3389
+   68  python3 -m http.server
+   69  cd ..
+   70  ls -lt
+   71  mkdir C#
+   72  ls -lt
+   73  mkdir Dev
+   74  ls -lt
+   75  cd Dev
+   76  pwd
+   77  ls -lt
+   78  dotnet --version
+   79  dotnet new
+   80  dotnet new webapi -o MyFirstWebApi
+   81  pwd
+   82  ls -lt
+   83  cd MyFirstWebApi
+   84  tree
+   85  ls -lt
+   86  code .
+   87  curl https://http://localhost:5000/weatherforecast
+   88  curl http://http://localhost:5000/weatherforecast
+   89  time http://http://localhost:5000/weatherforecast
+   90  time curl http://http://localhost:5000/weatherforecast
+   91  ifconfig
+   92  time curl http://10.152.16.200:5000/weatherforecast
+   93* time curl http://.0.0.1:5000/weatherforecast
+   94  time curl http://10.152.16.200:5000/weatherforecast
+   95  curl http://10.152.16.200:5000/weatherforecast
+   96  ls -lt
+   97  curl http://10.152.16.200:5000/mydata
+   98  cd ..
+   99  history
+  100  history > history_20200826.txt
