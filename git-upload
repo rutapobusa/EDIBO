@@ -2,5 +2,5 @@
 
 git config --global user.email rutapobusa@gmail.com
 git add .
-git commit -m "20200826_19_32"
+git commit -m "20200831_19_35"
 git push origin master
