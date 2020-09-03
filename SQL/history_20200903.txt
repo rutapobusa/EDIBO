@@ -1,0 +1,2550 @@
+SELECT * FROM MyFUNC (100) AS RESULT;
+USE firstdb;
+SELECT * FROM MyFUNC;
+USE firstdb;
+SELECT * FROM MyFUNC(100);
+USE firstdb;
+SELECT * FROM MyFUNC(100);
+USE firstdb;
+SELECT * FROM MyFUNC(100);
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+RETURNS INT(11)
+DETERMINISTIC
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+DROP TRIGGER MyTBL_guard;
+USE firstdb;
+CALL MyPROC(1);
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+RETURNS INT(11)
+DETERMINISTIC
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT), 
+RETURNS INT(11)
+DETERMINISTIC
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT), RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INT;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+USE `firstdb`;
+DROP procedure IF EXISTS `MyPROC`;
+USE `firstdb`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MyPROC`(IN inId INT)
+BEGIN
+	INSERT INTO MyTBL (Id) VALUES (inId);
+	SELECT * FROM MyTBL;
+END;
+CREATE DEFINER='root@localhost' FUNCTION MyFUNC (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis INT)
+RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT)
+RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT)
+RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CALL MyPROC(1);
+USE firstdb;
+USE `firstdb`;
+DROP procedure IF EXISTS `MyPROC`;
+USE `firstdb`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MyPROC`(IN inId INT)
+BEGIN
+	INSERT INTO MyTBL (Id, Title) VALUES (inId);
+	SELECT * FROM MyTBL WHERE Id=@inId;
+END;
+CALL MyPROC(1);
+USE firstdb;
+CALL MyPROC(1);
+USE firstdb;
+CALL MyPROC(1);
+USE firstdb;
+CALL MyPROC(1);
+USE firstdb;
+USE `firstdb`;
+DROP procedure IF EXISTS `MyPROC`;
+USE `firstdb`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MyPROC`(IN inId INT)
+BEGIN
+	INSERT INTO MyTBL (Id, Title) VALUES (inId='Viens');
+	SELECT * FROM MyTBL WHERE Id=@inId;
+END;
+CALL MyPROC(1);
+USE firstdb;
+USE `firstdb`;
+DROP procedure IF EXISTS `MyPROC`;
+USE `firstdb`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MyPROC`(IN inId INT)
+BEGIN
+	INSERT INTO MyTBL (Id, Title) VALUES (inId='Viens');
+	SELECT * FROM MyTBL;
+END;
+CALL MyPROC(1);
+USE firstdb;
+USE `firstdb`;
+DROP procedure IF EXISTS `MyPROC`;
+USE `firstdb`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MyPROC`(IN inId INT)
+BEGIN
+	INSERT INTO MyTBL (Id) VALUES (inId='Viens');
+	SELECT * FROM MyTBL;
+END;
+CALL MyPROC(1);
+USE firstdb;
+USE `firstdb`;
+DROP procedure IF EXISTS `MyPROC`;
+USE `firstdb`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MyPROC`(IN inId INT)
+BEGIN
+	INSERT INTO MyTBL (Id) VALUES (inId);
+	SELECT * FROM MyTBL;
+END;
+CALL MyPROC(1);
+USE firstdb;
+USE `firstdb`;
+DROP procedure IF EXISTS `MyPROC`;
+USE `firstdb`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MyPROC`(IN inId INT)
+BEGIN
+	INSERT INTO MyTBL (Id) VALUES (inId='AAA');
+	SELECT * FROM MyTBL;
+END;
+CALL MyPROC(1);
+USE firstdb;
+CALL MyPROC(2);
+USE firstdb;
+CALL MyPROC(2);
+USE firstdb;
+USE `firstdb`;
+DROP procedure IF EXISTS `MyPROC`;
+USE `firstdb`;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MyPROC`(IN inId INT)
+BEGIN
+	INSERT INTO MyTBL (Id) VALUES (inId);
+	SELECT * FROM MyTBL;
+END;
+CALL MyPROC(2);
+USE firstdb;
+CALL MyPROC(10);
+USE firstdb;
+CALL MyPROC(4);
+USE firstdb;
+CALL MyPROC(2);
+USE firstdb;
+CALL MyPROC(2);
+USE firstdb;
+CALL MyPROC(1);
+USE firstdb;
+CALL MyPROC(1);
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT)
+RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT);
+RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT);
+RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) 
+RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE PROCEDURE MyPROC (IN inId INT)
+BEGIN
+	SELECT * FROM MyTBL WHERE Id=@inId;
+	
+
+END;;
+USE firstdb;
+SELECT * FROM MyFUNC(100) AS RESULT;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC'(solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC'  RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC'  RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+SELECT * FROM MyFUNC;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE PROCEDURE 'MyFUNC' (solis INT);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE PROCEDURE 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+        SET lielums = lielums + mainig1;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11)
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(11)
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT(100);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT (11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT (11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT (11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT (11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis INT) RETURNS INT (11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis_INT) RETURNS INT (11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis_INT) RETURNS INT;
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis_INT) RETURNS INT;
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE DEFINER='firstdb'@'%' FUNCTION 'MyFUNC' (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION 'MyFUNC' (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURN INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11);
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11)
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11)
+
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11);
+
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT(11);
+
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		SET lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+USE firstdb;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURNS INT
+
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+USE firstdb;
+USE firstdb;
+USE firstdb;
+CREATE FUNCTION MyFUNC (solis_INT) RETURN INT
+
+BEGIN
+	DECLARE lielums, done INT;
+	DECLARE mainig1 INTEGER;
+	DECLARE mainig2 VARCHAR(20);
+	    
+	DECLARE cursors_ieksh_tabulas CURSOR FOR SELECT Id, Title FROM MyTBL;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+    
+    SET lielums = 0;
+	SET done = FALSE;
+	OPEN cursors_ieksh_tabulas;
+	lasiishanas_cikls: LOOP
+		FETCH cursors_ieksh_tabulas INTO mainig1, mainig2;
+		lielums = lielums + mainig1;
+		IF done THEN
+			LEAVE lasiishanas_cikls;
+		END IF;
+	END LOOP;
+	CLOSE cursors_ieksh_tabulas;
+
+	RETURN lielums;
+
+END;;
+USE firstdb;
+USE firstdb;
+USE firstdb;
+USE firstdb;
+SELECT M0.column1 as Name FROM One M0 
+RIGHT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT M0.column1 as C1 FROM One M0 
+RIGHT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT M0.column1 FROM One M0 
+RIGHT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT M0.column1 as C1 FROM One M0 
+RIGHT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT column1 as C1 FROM One M0 
+RIGHT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM One M0 
+RIGHT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM One M0 
+LEFT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM One M0 
+JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM One M0 
+RIGHT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM One M0 
+JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM One M0 
+LEFT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM MyTBL M0 
+LEFT JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM MyTBL M0 
+JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM firstdb.one;
+SELECT * FROM firstdb.mytbl;
+SELECT * FROM MyTBL M0 
+JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM MyTBL M0 
+JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM MyTBL M0 
+JOIN MyTBL M0a 
+ON fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM MyTBL M0 
+JOIN MyTBL M0a 
+ON M0.fkColumn4=M0a.Id;
+USE firstdb;
+SELECT * FROM MyTBL M0 
+JOIN One M0a 
+ON M0.fkColumn4=M0a.Id;
+USE firstdb;
+USE firstdb;
+USE firstdb;
+SELECT * FROM One M0 ON M0.fkColumn4=M0a.Idmytbl;
+USE firstdb;
+SELECT * FROM MyTBL;
+USE firstdb;
+USE MyTBL;
+SHOW CREATE TRIGGER MyTBL_6_guard;
+USE db24;
+SHOW CREATE TRIGGER MyTBL_7_guard;
+USE db24;
+SHOW CREATE TRIGGER MyTBL_6_guard;
+USE db24;
